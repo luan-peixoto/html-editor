@@ -1,0 +1,14 @@
+/* outline remove a borda da caixa */
+
+.content-box {
+    outline: 0px solid transparent;
+    border: 1px solid rgb(230, 230, 230);
+    overflow-y: auto;
+    height: 320px;
+}
+
+.result-box {
+    border: 1px solid rgb(230, 230, 230);
+    overflow-y: auto;
+    height: 320px;
+}
