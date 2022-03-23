@@ -26,13 +26,18 @@
         <!-- caixas de texto -->
         <div class="row pt-2">
             <div class="col-lg-6 mx-auto mb-5 mb-lg-0">
-                <div contenteditable="true" class="content-box ps-2 pe-2 p-1">
-                    asdas
+                <div id="content-box" contenteditable="true" class="content-box ps-2 pe-2 p-1">
                 </div>
             </div>
             <div class="col-lg-6 mx-auto">
-                <div class="result-box ps-2 pe-2 p-1">
+                <div id="result-box" class="result-box ps-2 pe-2 p-1">
                 </div>
+            </div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col-2">
+                <button type="button" onClick="copiarTexto()" class="btn btn-success">Copiar Texto</button>
             </div>
         </div>
     </div>
