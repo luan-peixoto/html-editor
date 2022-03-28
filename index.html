@@ -14,42 +14,91 @@
 
     <div class="container">
 
+        <!-- título -->
+        <div class="text-center pt-5">
+            <h2>Editor HTML WYSIWYG</h2>
+        </div>
+
         <!-- botões -->
         <div class="row pt-5">
             <div class="col-lg-8 mb-2">
                 <div class="text-center">
-                    <button class="btn-estilo" type="button" onClick="setEstilo('bold')" ><i class="fa fa-bold"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('italic')" ><i class="fa fa-italic"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('underline')" ><i class="fa fa-underline"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('insertUnorderedlist')" ><i class="fa fa-list-ul"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('insertOrderedlist')" ><i class="fa fa-list-ol"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('createLink')" ><i class="fa fa-link"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyLeft')" ><i class="fa fa-align-left"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyCenter')" ><i class="fa fa-align-center"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyRight')" ><i class="fa fa-align-right"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyFull')" ><i class="fa fa-align-justify"></i></button>
-                    <button class="btn-estilo" type="button" onClick="setEstilo('insertImage')" ><i class="fa fa-image"></i></button>
+
+
+                    <button class="btn-estilo" type="button" onClick="setEstilo('bold')"><i
+                            class="fa fa-bold"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('italic')"><i
+                            class="fa fa-italic"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('underline')"><i
+                            class="fa fa-underline"></i></button>
+
+                    <select onChange="console.log(this.value)" onFocus="this.selectedIndex = -1; this.blur();">
+                        <option value="1">8</option>
+                        <option value="1">9</option>
+                        <option value="1">10</option>
+                        <option value="1">11</option>
+                        <option value="1">12</option>
+                        <option value="1">14</option>
+                        <option value="1">18</option>
+                        <option value="1">24</option>
+                        <option value="1">30</option>
+                        <option value="1">36</option>
+                        <option value="1">48</option>
+                        <option value="1">60</option>
+                        <option value="1">72</option>
+                        <option value="1">96</option>
+                    </select>
+
+
+                    <button class="btn-estilo" type="button" onClick="setEstilo('insertUnorderedlist')"><i
+                            class="fa fa-list-ul"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('insertOrderedlist')"><i
+                            class="fa fa-list-ol"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('createLink')"><i
+                            class="fa fa-link"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyLeft')"><i
+                            class="fa fa-align-left"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyCenter')"><i
+                            class="fa fa-align-center"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyRight')"><i
+                            class="fa fa-align-right"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('justifyFull')"><i
+                            class="fa fa-align-justify"></i></button>
+                    <button class="btn-estilo" type="button" onClick="setEstilo('insertImage')"><i
+                            class="fa fa-image"></i></button>
                 </div>
             </div>
         </div>
 
         <!-- caixas de texto -->
         <div class="row pt-2">
-            <div class="col-lg-8 mx-auto mb-5 mb-lg-0">
+            <div class="col-lg-8 mx-auto">
                 <div id="content-box" contenteditable="true" class="content-box ps-2 pe-2 p-1">
                 </div>
             </div>
-            <div class="col-lg-4 mx-auto">
-                <div id="result-box" class="result-box ps-2 pe-2 p-1">
+            <div class="d-none d-lg-block col-lg-4 mx-auto">
+                <div id="result-box-1" class="result-box ps-2 pe-2 p-1">
                 </div>
             </div>
         </div>
 
         <div class="row pt-2">
-            <div class="col-2">
-                <button type="button" onClick="copiarTexto()" class="btn btn-success">Copiar Texto</button>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn-estilo fw-bold" type="button" onClick="copiarTexto()">Copiar Texto</button>
+                    </div>
+                    <div class="col-12">
+                        <p>Created by Luan Peixoto Jardim @ 28/03/2022.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div id="result-box-2" class="d-block d-lg-none result-box ps-2 pe-2 p-1">
+                </div>
             </div>
         </div>
+
     </div>
 
 

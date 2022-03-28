@@ -1,9 +1,9 @@
 /* listener de quando mudar conteúdo da div */
 
 document.getElementById("content-box").addEventListener("input", function() {
-    console.log("input event fired");
     let html = document.getElementById("content-box").innerHTML;
-    document.getElementById("result-box").innerText = html;
+    document.getElementById("result-box-1").innerText = html;
+    document.getElementById("result-box-2").innerText = html;
 }, false);
 
 
