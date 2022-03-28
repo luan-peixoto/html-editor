@@ -26,3 +26,18 @@ function setEstilo(estilo) {
     }
     document.execCommand(estilo, false, null);
 };
+
+function setTamanho(tamanho) {
+    document.execCommand('fontSize', false, tamanho);
+
+}
+
+function setFonte(nome) {
+    document.execCommand('fontName', false, nome);
+
+}
+
+function setCor(cor) {
+    document.execCommand('foreColor', false, cor);
+
+}

@@ -24,6 +24,45 @@
             <div class="col-lg-8 mb-2">
                 <div class="text-center">
 
+                    <select style="padding: 1px; padding-bottom: 2px;" class="btn-estilo"
+                        onChange="setFonte(this.value);"
+                        onFocus="this.selectedIndex = -1; this.blur();">
+                        <option value="Arial">Arial</option>
+                        <option value="Calibri">Calibri</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Trebuchet MS">Trebuchet MS</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
+
+                    <select style="padding: 1px; padding-bottom: 2px;" class="btn-estilo"
+                        onChange="setTamanho(this.value);"
+                        onFocus="this.selectedIndex = -1; this.blur();">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                    <select style="padding: 1px; padding-bottom: 2px;" class="btn-estilo"
+                        onChange="setCor(this.value);"
+                        onFocus="this.selectedIndex = -1; this.blur();">
+                        <option style="color: #000000" value="#000000">#000000</option>
+                        <option style="color: #333333" value="#333333">#333333</option>
+                        <option style="color: #666666" value="#666666">#666666</option>
+                        <option style="color: #999999" value="#999999">#999999</option>
+                        <option style="color: #CCCCCC" value="#CCCCCC">#CCCCCC</option>
+                        <option style="color: #FFFFFF" value="#FFFFFF">#FFFFFF</option>
+                        <option style="color: #0000FF" value="#0000FF">#0000FF</option>
+                        <option style="color: #00FF00" value="#00FF00">#00FF00</option>
+                        <option style="color: #FF0000" value="#FF0000">#FF0000</option>
+                        <option style="color: #FFFF00" value="#FFFF00">#FFFF00</option>
+                        <option style="color: #FF00FF" value="#FF00FF">#FF00FF</option>
+                        <option style="color: #cabe12" value="#cabe12">#CABE12</option>
+                    </select>
+
 
                     <button class="btn-estilo" type="button" onClick="setEstilo('bold')"><i
                             class="fa fa-bold"></i></button>
